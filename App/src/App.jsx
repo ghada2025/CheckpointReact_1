@@ -5,7 +5,7 @@ import { Image } from './components/Image';
 import { Price } from './components/Price';
 
 function App() {
-
+  const firstName = "Ghada"; 
   return (
     <>
       <div className="title">
@@ -18,6 +18,10 @@ function App() {
           <span> <Name /> </span>
           <p className="job"> <Price /></p>
           <p className="job"> <Description /></p>
+        </div>
+        <div className="profile">
+          <h4>Bonjour{firstName ? " " + firstName : " !"}</h4>
+          {firstName && <img src="/image(1).png" alt="Profile" />}
         </div>
       </div>
     </>
